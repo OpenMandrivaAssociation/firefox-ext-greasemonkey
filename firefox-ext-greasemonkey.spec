@@ -2,14 +2,14 @@
 
 Summary: Greasemonkey extension for firefox
 Name: firefox-ext-greasemonkey
-Version: 0.8.20100211.5
-Release: %mkrel 2
+Version: 0.8.20100408.6
+Release: %mkrel 1
 License: MIT
 Group:	Networking/WWW
-URL:	https://addons.mozilla.org/fr/firefox/addon/748
-Source: https://addons.mozilla.org/fr/firefox/downloads/latest/748/addon-748-latest.xpi
+URL:	https://addons.mozilla.org/en-US/firefox/addon/748
+Source: http://releases.mozilla.org/pub/mozilla.org/addons/748/greasemonkey-%{version}-fx.xpi
 BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
-Requires:	mozilla-firefox => %{firefox_epoch}:%{firefox_version}
+Requires:	mozilla-firefox = %{firefox_epoch}:%{firefox_version}
 BuildRequires:	firefox-devel
 
 %description
