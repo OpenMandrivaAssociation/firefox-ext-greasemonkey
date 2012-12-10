@@ -2,13 +2,13 @@
 Summary: Greasemonkey extension for firefox
 Name: firefox-ext-greasemonkey
 Version: 0.8.20100408.6
-Release: %mkrel 7
+Release: 8
 License: MIT
 Group:	Networking/WWW
 URL:	https://addons.mozilla.org/en-US/firefox/addon/748
 Source: http://releases.mozilla.org/pub/mozilla.org/addons/748/greasemonkey-%{version}-fx.xpi
 BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
-Requires:	mozilla-firefox >= %{firefox_epoch}:%{firefox_version}
+Requires:	mozilla-firefox >= %{firefox_version}
 BuildRequires:	firefox-devel
 Buildarch: noarch
 
@@ -45,4 +45,44 @@ rm -rf %{buildroot}
 %files
 %defattr(0644,root,root,0755)
 %{firefox_extdir}
+
+
+
+%changelog
+* Wed Jan 19 2011 Thierry Vignaud <tv@mandriva.org> 0.8.20100408.6-7mdv2011.0
++ Revision: 631670
+- prevent need to rebuild for every new firefox
+- only package .xpi
+
+* Wed Jan 05 2011 Thierry Vignaud <tv@mandriva.org> 0.8.20100408.6-6mdv2011.0
++ Revision: 628867
+- rebuild for new firefox
+
+* Sun Sep 26 2010 Thierry Vignaud <tv@mandriva.org> 0.8.20100408.6-5mdv2011.0
++ Revision: 581105
+- rebuild for new firefox
+- rebuild for new firefox
+
+* Tue Jul 27 2010 Funda Wang <fwang@mandriva.org> 0.8.20100408.6-3mdv2011.0
++ Revision: 561155
+- rebuild for ff 3.6.8
+
+* Mon Jun 28 2010 Frederic Crozat <fcrozat@mandriva.com> 0.8.20100408.6-2mdv2010.1
++ Revision: 549358
+- rebuild with FF 3.6.6
+
+  + Funda Wang <fwang@mandriva.org>
+    - new verison 0.8.20100408.6
+
+* Sun Apr 04 2010 Funda Wang <fwang@mandriva.org> 0.8.20100211.5-2mdv2010.1
++ Revision: 531096
+- rebuild
+
+* Sat Mar 27 2010 Thierry Vignaud <tv@mandriva.org> 0.8.20100211.5-1mdv2010.1
++ Revision: 528044
+- import firefox-ext-greasemonkey
+
+
+* Sat Mar 27 2010 Thierry Vignaud <tvignaud@mandriva.com> 0.8.20100211.5-1mdv2010.1
+- initial creation
 
