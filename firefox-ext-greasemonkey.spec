@@ -2,7 +2,7 @@
 Summary: Greasemonkey extension for firefox
 Name: firefox-ext-greasemonkey
 Version: 0.8.20100408.6
-Release: 8
+Release: 9
 License: MIT
 Group:	Networking/WWW
 URL:	https://addons.mozilla.org/en-US/firefox/addon/748
